@@ -1,0 +1,126 @@
+<html>
+
+<u><strong>Release 2.33</strong></u>
+<p><u>Enhancements</u><br>
+1. Improved the performance of tool during validation and import process.</p>
+
+<p><u><strong>Release 2.32</strong></u></p>
+<p><u>Enhancements</u><br>
+1. Added a 'View Release History' link on the Update dialog. On clicking on the link, release history for the tool will be displayed and link gets changed to 'View Latest Version Info'. Clicking on this link reverts back to previous content of latest version information.</p>
+
+<p><u><strong>Release 2.31</strong></u></p>
+<p><u>Defect Fixes</u><br>
+1. Previously, if tool was unable to get the version number from Configuration path, then it used to display version number as null in the tool. Now, this is handled to get the version number from code if unable to get from Configuration path.</p>
+
+<p><u><strong>Release 2.30</strong></u></p>
+<p>
+<u>Enhancements</u><br>
+1. Added Jira URL field in the Login page. This will allow all Jira users across different organizations to use this tool to upload test cases in Jira Cloud.
+</p>
+
+<p><u><strong>Release 2.21</strong></u></p>
+<p>
+<u>Defect Fixes</u><br>
+1.	Added check to verify if value in ‘TestCaseId’ column exists, if the column already exists in the importing sheet
+</p>
+
+<p><u><strong>Release 2.20</strong></u></p>
+<p>
+<u>Defect Fixes</u><br>
+1.	On clicking on Run button, if the excel file is open, then a dialog gets displayed asking to close the excel.
+</p>
+
+<p><u><strong>Release 2.10</strong></u></p>
+<p>
+<u>Enhancements</u><br>
+1.	Excel columns will be refreshed, if you go back to 'Project & Sheet' page and click on Next button. Previously, this was avoided whenever the same excel is selected. Henceforth, even if it is the same excel, on clicking on Next button, excel columns will be loaded again.<br>
+2.	On clicking on Validate button, tool will check if 'TestCaseId' column exists and also if there is any value against the Summary row. If there is a value (Jira Test Case Id) already present , then those test cases will not be selected for import process. This has been done to avoid importing same test cases again to Jira.<br>
+3.	On performing validation, if no test cases are selected for import, then a message will be displayed asking to update the excel sheet accordingly for selection.
+</p>
+
+<p><u><strong>Release 2.0</strong></u></p>
+<p>
+<u>Enhancements</u><br>
+1.	New wrapper class implemented to take care of downloading new version of tool if available<br>
+2.	Added ability to update Sprint for the created test case.<br>
+3.	Added ability to update multiple labels for the created test case<br>
+4.	Added feature of showing the created test case Key in Excel column and on UI Console text area during creation
+<br><u>Defect Fixes</u><br>
+1.	Fixed to show the correct excel row number in case of validation error message
+</p>
+
+<p><u><strong>Release 1.60</strong></u></p>
+<p>
+<u>Enhancements</u><br>
+1.	After login, Project Name drop down field will be defaulted to blank value in ‘Project & Sheet” page. Browse button and File Text field will be enabled only after selecting the project from the drop down.<br>
+2.	Updated the Jira field names in ‘Mapping’ page from “Data“, “Step“, “Result“ to “Test Data“, “Test Step“, “Expected Result“ to have the same nomenclature as in Jira UI
+<br><u>Defect Fixes</u><br>
+1.	Percentage values in the progress bar during import of large number of test cases has been corrected<br>
+2.	If excel contains extra blank rows after all the test cases, excel operation was getting failed and there was no indication on the UI. UI message “Excel Operation Failure: <Description>” will be displayed if there is any excel exceptions.
+</p>
+
+<p><u><strong>Release 1.50</strong></u></p>
+<p>
+<u>Enhancements</u><br>
+1.	Added ability to link test cases to other issues in Jira<br>
+2.	2 more values added to Jira Fields List in Mapping screen. Values are “Link Issue” and “Link Type”<br>
+3.	Expanded the List areas ‘Jira Fields’, ‘Excel Columns’ & ‘Mapping List’ in Mapping screen and ‘Mapping’ field in Confirmation screen
+</p>
+
+<p><u><strong>Release 1.40</strong></u></p>
+<p>
+<u>Enhancements</u><br>
+1.	Changed the Look & Feel to Nimbus theme<br>
+2.	Added loading icons during at following places<br>
+&nbsp;&nbsp;a.	After clicking on Login button<br>
+&nbsp;&nbsp;b.	After clicking on Validate button to validate the excel data.<br>
+3.	Changed the background image to suit Nimbus<br>
+4.	Added percentage display in the progress bar during upload<br>
+<br><u>Defect Fixes</u><br>
+1.	Instead of displaying “Unable to connect on LAN” message, it was displaying “Invalid Credentials”. This issue has been fixed.<br>
+2.	Exception errors during update of last row in the excel has been fixed.
+</p>
+
+<p><u><strong>Release 1.30</strong></u></p>
+<p>
+<u>Defect Fixes</u><br>
+1.	Tool will now be able to handle test cases with single line steps.<br>
+2.	Removed dependency of excel column name to import test cases successfully.
+</p>
+
+<p><u><strong>Release 1.20</strong></u></p>
+<p>
+<u>Enhancements</u><br>
+1.	Added an error message to indicate the tool can be used only on Wifi
+<br><u>Defect Fixes</u><br>
+1.	Reporter field in Jira was not reflecting the Logged in User’s name on Test cases after importing. This Defect has been fixed to reflect the logged in user. 
+</p>
+
+<p><u><strong>Release 1.10</strong></u></p>
+<p>
+<u>Enhancements</u><br>
+1.	Added feature of store the mapping preference of last excel used for import operation
+<br><u>Defect Fixes</u><br>
+1.	Removed overlapping of Success message on completion of Import operation<br>
+2.	Fixed scroll pane to move to end of message for Console area used to display the import progress
+</p>
+
+<p><u><strong>Release 1.0</strong></u></p>
+<p>
+Initial Launch of JiraTestCaseImporter Tool
+</p>
+
+<p>
+
+
+
+
+
+
+
+
+
+
+
+</p>
+</html>
